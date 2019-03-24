@@ -1,9 +1,12 @@
 {
     "name": "Friend_finder",
     "version": "1.0.0",
-    "description": "",
+    "description": "A basic friend finder app",
     "main": "server.js",
     "license": "ISC",
+    "engines": {
+        "node": "v8.12.0"
+    },
     "dependencies": {
         "express": "^4.163"
     }
