@@ -1,13 +1,24 @@
 {
-    "name": "Friend_finder",
-    "version": "1.0.0",
-    "description": "A basic friend finder app",
-    "main": "server.js",
-    "license": "ISC",
-    "engines": {
-        "node": "8.12.0"
-    },
-    "dependencies": {
-        "express": "^4.163"
-    }
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "a basic friend finder app",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agauntt/Friend_Finder.git"
+  },
+  "author": "Aaron Gauntt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Agauntt/Friend_Finder/issues"
+  },
+  "homepage": "https://github.com/Agauntt/Friend_Finder#readme"
 }
