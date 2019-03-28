@@ -1,5 +1,4 @@
 var express = require("express");
-var path = require("path");
 
 var PORT = process.env.PORT || 8080;
 
@@ -12,11 +11,17 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "app/public/home.html"));
-});
+
+// Routes
+// =====================================================
+require("./app/routing/htmlRoutes")(app);
+
+require("./app/routing/apiRoutes")(app);
+// =====================================================
 
 
+// Starts the server to begin listening
+// =====================================================
 app.listen(PORT, function() {
     console.log("server listening on: http://localhost:" + PORT);
 })
